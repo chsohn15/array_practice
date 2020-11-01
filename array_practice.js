@@ -25,8 +25,6 @@ var duplicateZeros = function(arr) {
     }
   }
  
-  console.log("Zero count is " + zeroCount)
-  console.log("Limit is " + limit)
      
      
      //Shift indices to the right, with duplicate zeroes
@@ -45,11 +43,8 @@ var duplicateZeros = function(arr) {
         //decrement zeroCount by 1
          //Add another zero one index left of the previously placed one
            if (arr[i] === 0 && zeroCount > 0 && (i + a) <= arr.length ){
-             console.log("i:"+ i)
-             console.log("a:" + a)
              zeroCount -- 
              arr[i + zeroCount] = arr[i] 
-             console.log(arr)
              }
  
          i--
