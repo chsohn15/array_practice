@@ -11,10 +11,7 @@ function binarySearch(arr, elem){
         }
         middle = Math.floor((start + end)/2)
     }
-    if(elem === arr[middle]){
-        return middle
-    }
-    return -1
+    return elem === arr[middle] ? middle :  -1
 }
 
 console.log(binarySearch([2, 5, 6, 9, 13, 15, 28, 30], 16))
