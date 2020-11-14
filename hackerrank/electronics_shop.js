@@ -26,6 +26,6 @@ function getMoneySpent(keyboards, drives, b) {
   }
 
 
-  let keyboards = [3, 1]
+let keyboards = [3, 1]
 let drives = [3, 7, 8]
 b = 10
