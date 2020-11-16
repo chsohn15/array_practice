@@ -1,12 +1,11 @@
 //recursion
 
-var reverseString = function(s) {
+var reverseString = function(str) {
+    let s = str.split("")
     let i = 0 
     let j = s.length - 1
 
     function helper(i, j){
-    //if (i === j) {
-       // return s}
     if (j < i){
         return
     }
@@ -21,5 +20,7 @@ var reverseString = function(s) {
     }
     
     helper(0, s.length -1)
-    return s
+    return s.join("")
 };
+
+console.log(reverseString("hello"))
