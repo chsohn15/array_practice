@@ -15,3 +15,10 @@ function numberCompare(num1, num2){
 
 console.log([6, 4, 15, 10].sort(numberCompare))
 
+// Sort by string length 
+
+function compareByLen(str1, str2){
+    return str1.length - str2.length
+}
+
+console.log(["house", "car", "tree"].sort(compareByLen))
