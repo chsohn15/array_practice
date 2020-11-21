@@ -13,7 +13,12 @@ function numberCompare(num1, num2){
     return num1 - num2
 }
 
+function numberCompare2(num1, num2){
+    return num2 - num1
+}
+
 console.log([6, 4, 15, 10].sort(numberCompare))
+console.log([6, 4, 15, 10].sort(numberCompare2))
 
 // Sort by string length 
 
